@@ -1,0 +1,53 @@
+> npm i -g expo-cli (em qq local) - instalação
+> se for pedido, atualize o npm (npm install -g npm@10.8.2)
+> expo --version
+----------------------------------------------------
+CRIAR PROJETO
+> npx create-expo-app --template
+----------------------------------------------------
+> acesse a pasta do projeto > cd seu-projeto
+----------------------------------------------------
+instale os ícones no seu projeto, o primeiro funcionou bem
+> npm i react-native-vector-icons
+
+/*
+Documentação do icons
+- ​Link da documentação:
+https://github.com/oblador/react-native-vector-icons
+- Veja todos os icones:
+https://oblador.github.io/react-native-vector-icons/
+*/
+----------------------------------------------------
+> code .
+----------------------------------------------------
+TESTAR PROJETO
+npx expo start
+npx expo install react-native-web react-dom @expo/metro-runtime
+----------------------------------------------------
+
+App.js
+
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import Feather from 'react-native-vector-icons/Feather';
+import Entypo from 'react-native-vector-icons/Entypo';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>Aula 01 - React Native</Text>
+      <Text>Aula</Text>
+      <Entypo name="water" size={25} color="blue" />
+      <Feather name="database" size={25} color="#333" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
