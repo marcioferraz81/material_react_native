@@ -1,0 +1,29 @@
+instalar extensões vs code
+- dracula
+- color highlight
+- vs icons
+- sujeito programador
+- vs code styled
+
+------------------------------
+
+baixar e instalar o nodejs
+reiniciar a máquina
+no cmd > npm i -g expo-cli
+
+------------------------------
+
+Acesse a pasta C:/> cd\
+Crie a pasta react ::: mkdir react
+Acesse a pasta ::: cd react
+
+Crie o projeto ::: npx create-expo-app --template
+Acesse a pasta do projeto ::: cd appUsuario
+
+
+#Essas dependências são exemplos
+Instale o firebase no projeto
+> npm i firebase@^8.8.1
+> npx expo install react-native-web@~0.18.10 react-dom@18.2.0 @expo/webpack-config@^18.0.1
+
+Abra no code .
